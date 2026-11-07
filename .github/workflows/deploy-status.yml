@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: Production
-      url: https://place-cell-outreach-sized.trycloudflare.com
+      url: https://college-id-management.onrender.com
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -19,7 +19,7 @@ jobs:
       - name: Verify Portal Status
         run: |
           echo "🎓 Vignan College ID Management Portal"
-          echo "🌐 Live URL: https://place-cell-outreach-sized.trycloudflare.com"
-          echo "🔍 Verification: https://place-cell-outreach-sized.trycloudflare.com/verify"
-          echo "✅ Status: ACTIVE (Production Edge)"
+          echo "🌐 Live Permanent Cloud URL: https://college-id-management.onrender.com"
+          echo "🔍 Verification Endpoint: https://college-id-management.onrender.com/verify"
+          echo "✅ Status: ACTIVE (Render Cloud 24/7)"
 

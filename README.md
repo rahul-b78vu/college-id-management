@@ -2,8 +2,8 @@
 
 A web-based student ID management system built for Vignan University. It allows administrators to issue official PVC-style student ID cards with dynamic QR codes and provides an instant verification portal with 2FA email OTP to verify student authenticity on the spot.
 
-🔗 **Live Link:** [https://place-cell-outreach-sized.trycloudflare.com](https://place-cell-outreach-sized.trycloudflare.com)  
-🔍 **Verification Portal:** [https://place-cell-outreach-sized.trycloudflare.com/verify](https://place-cell-outreach-sized.trycloudflare.com/verify)
+🔗 **Live Permanent Link:** [https://college-id-management.onrender.com](https://college-id-management.onrender.com)  
+🔍 **Verification Portal:** [https://college-id-management.onrender.com/verify](https://college-id-management.onrender.com/verify)
 
 ---
 

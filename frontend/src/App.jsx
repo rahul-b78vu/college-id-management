@@ -11,7 +11,7 @@ const getApiBase = () => {
   return "http://localhost:5000/api";
 };
 
-const PUBLIC_TUNNEL_URL = "https://place-cell-outreach-sized.trycloudflare.com";
+const PUBLIC_TUNNEL_URL = "https://college-id-management.onrender.com";
 
 const getQrBaseUrl = () => {
   if (typeof window !== "undefined") {

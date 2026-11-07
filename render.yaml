@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: vignan-college-id
+    name: college-id-management
     runtime: node
     plan: free
     buildCommand: npm run build

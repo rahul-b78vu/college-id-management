@@ -1,5 +1,16 @@
 # 🎓 College ID Management & Verification System
 
+[![Live Demo](https://img.shields.io/badge/Live%20Portal-Online%20(Edge%204G%2F5G)-00c853?style=for-the-badge&logo=cloudflare&logoColor=white)](https://outreach-random-concrete-cats.trycloudflare.com)
+[![GitHub Deployment](https://img.shields.io/badge/Deployment-24%2F7%20Cloud%20Ready-0284c7?style=for-the-badge&logo=render&logoColor=white)](https://dashboard.render.com)
+
+> 🌐 **Live Public URL (Accessible on any mobile 4G/5G network worldwide):**  
+> 👉 **[https://outreach-random-concrete-cats.trycloudflare.com](https://outreach-random-concrete-cats.trycloudflare.com)**
+>
+> 🔍 **Instant Verification Endpoint:**  
+> 👉 **[https://outreach-random-concrete-cats.trycloudflare.com/verify](https://outreach-random-concrete-cats.trycloudflare.com/verify)**
+
+---
+
 [![React](https://img.shields.io/badge/Frontend-React%2018%20%2B%20Vite-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Node.js](https://img.shields.io/badge/Backend-Node.js%20%2B%20Express-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![MongoDB](https://img.shields.io/badge/Database-MongoDB%20Atlas-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/atlas)
@@ -123,3 +134,4 @@ This project is configured with a unified entrypoint (`server.js`) and [`render.
 
 ## 📄 License
 This project is licensed under the [MIT License](LICENSE) — created for academic administration and student verification.
+

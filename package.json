@@ -5,7 +5,7 @@
   "description": "Student ID Card Generator with QR & OTP Verification",
   "main": "server.js",
   "scripts": {
-    "build": "npm --prefix frontend install && npm --prefix frontend run build && npm --prefix backend install",
+    "build": "npm --prefix frontend install --include=dev && npm --prefix frontend run build && npm --prefix backend install",
     "start": "node server.js",
     "backend": "npm --prefix backend start",
     "frontend": "npm --prefix frontend run dev",

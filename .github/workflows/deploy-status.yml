@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: Production
-      url: https://outreach-random-concrete-cats.trycloudflare.com
+      url: https://place-cell-outreach-sized.trycloudflare.com
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -19,6 +19,7 @@ jobs:
       - name: Verify Portal Status
         run: |
           echo "🎓 Vignan College ID Management Portal"
-          echo "🌐 Live URL: https://outreach-random-concrete-cats.trycloudflare.com"
-          echo "🔍 Verification: https://outreach-random-concrete-cats.trycloudflare.com/verify"
+          echo "🌐 Live URL: https://place-cell-outreach-sized.trycloudflare.com"
+          echo "🔍 Verification: https://place-cell-outreach-sized.trycloudflare.com/verify"
           echo "✅ Status: ACTIVE (Production Edge)"
+

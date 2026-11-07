@@ -47,3 +47,4 @@ You will get a permanent HTTPS link:
 - **Works 24/7/365 permanently**
 - **Works even when your computer is completely turned off**
 - **Mobile cameras scanning the QR code will open it from anywhere in the world on any 4G/5G or Wi-Fi network!**
+

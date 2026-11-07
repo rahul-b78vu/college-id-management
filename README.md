@@ -1,7 +1,8 @@
 # 🎓 College ID Management & Verification System
 
-[![Live Demo](https://img.shields.io/badge/Live%20Portal-Online%20(Edge%204G%2F5G)-00c853?style=for-the-badge&logo=cloudflare&logoColor=white)](https://outreach-random-concrete-cats.trycloudflare.com)
-[![GitHub Deployment](https://img.shields.io/badge/Deployment-24%2F7%20Cloud%20Ready-0284c7?style=for-the-badge&logo=render&logoColor=white)](https://dashboard.render.com)
+[![Live Portal](https://img.shields.io/badge/Live%20Portal-Online%20(Edge%204G%2F5G)-00c853?style=for-the-badge&logo=cloudflare&logoColor=white)](https://outreach-random-concrete-cats.trycloudflare.com)
+[![Deployment](https://img.shields.io/github/deployments/rahul-b78vu/college-id-management/Production?label=Production%20Deployment&style=for-the-badge&logo=github)](https://github.com/rahul-b78vu/college-id-management/deployments)
+[![Cloud Host](https://img.shields.io/badge/24%2F7%20Cloud-Render%20Ready-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://dashboard.render.com)
 
 > 🌐 **Live Public URL (Accessible on any mobile 4G/5G network worldwide):**  
 > 👉 **[https://outreach-random-concrete-cats.trycloudflare.com](https://outreach-random-concrete-cats.trycloudflare.com)**

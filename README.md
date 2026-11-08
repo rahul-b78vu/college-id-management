@@ -24,7 +24,7 @@ Physical college ID cards often lack an easy way to verify authenticity on the s
 - **Frontend:** React (Vite), CSS3
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB Atlas
-- **Tunnel / Deployment:** Cloudflare Tunnel / Render
+- **Deployment & Cloud Hosting:** Render (24/7 Cloud Architecture)
 
 ---
 

@@ -15,3 +15,4 @@ jobs:
           echo "Pinging Vignan College ID Management Portal..."
           curl -s -f https://college-id-management.onrender.com/api/health || true
           echo "Keep-alive ping sent successfully!"
+

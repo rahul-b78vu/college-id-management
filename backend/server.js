@@ -67,31 +67,33 @@ if (fs.existsSync(frontendDist)) {
   });
 }
 
-// Connect MongoDB and start server
-async function startServer() {
+// Start HTTP server immediately so Render detects open port and serves frontend without delay
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running at http://0.0.0.0:${PORT}`);
+  console.log(`Verification API active at http://0.0.0.0:${PORT}/api/verification`);
+  console.log(`Admin Auth API active at http://0.0.0.0:${PORT}/api/admin`);
+});
+
+// Connect to MongoDB asynchronously with auto-reconnect
+async function connectDatabase() {
+  if (!process.env.MONGO_URI) {
+    console.error("MONGO_URI is missing from environment variables!");
+    return;
+  }
+
   try {
-    if (!process.env.MONGO_URI) {
-      throw new Error("MONGO_URI is missing from .env file");
-    }
-
-    await mongoose.connect(process.env.MONGO_URI);
-
-    console.log("MongoDB Connected Successfully!");
-
-    // Ensure default admin account is seeded
-    await ensureDefaultAdmin();
-
-    const PORT = process.env.PORT || 5000;
-
-    app.listen(PORT, "0.0.0.0", () => {
-      console.log(`Server running at http://localhost:${PORT}`);
-      console.log(`Verification API active at http://localhost:${PORT}/api/verification`);
-      console.log(`Admin Auth API active at http://localhost:${PORT}/api/admin`);
+    await mongoose.connect(process.env.MONGO_URI, {
+      serverSelectionTimeoutMS: 8000,
+      socketTimeoutMS: 45000,
     });
+    console.log("MongoDB Connected Successfully!");
+    await ensureDefaultAdmin();
   } catch (error) {
-    console.error("Server Startup Failed:", error.message);
-    process.exit(1);
+    console.error("MongoDB Connection Warning:", error.message);
+    // Retry connection after 5 seconds instead of crashing server
+    setTimeout(connectDatabase, 5000);
   }
 }
 
-startServer();
+connectDatabase();

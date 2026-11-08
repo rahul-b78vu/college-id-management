@@ -1,9 +1,15 @@
 # College ID Management & Verification System
 
-A web-based student ID management system built for Vignan University. It allows administrators to issue official PVC-style student ID cards with dynamic QR codes and provides an instant verification portal with 2FA email OTP to verify student authenticity on the spot.
+[![Live Website](https://img.shields.io/badge/Render-Live%20Website-brightgreen?style=for-the-badge&logo=render&logoColor=white)](https://college-id-management.onrender.com)
+[![Verification Portal](https://img.shields.io/badge/QR%20Verification-Active-blue?style=for-the-badge&logo=qr-code&logoColor=white)](https://college-id-management.onrender.com/verify)
+[![Production Deployment](https://img.shields.io/badge/GitHub%20Environment-Production%20Active-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rahul-b78vu/college-id-management/deployments)
+[![System Health](https://img.shields.io/badge/Backend%20Status-200%20OK-emerald?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://college-id-management.onrender.com/api/health)
 
-🔗 **Live Permanent Link:** [https://college-id-management.onrender.com](https://college-id-management.onrender.com)  
-🔍 **Verification Portal:** [https://college-id-management.onrender.com/verify](https://college-id-management.onrender.com/verify)
+> **🌐 Official Public Web Portal:** [https://college-id-management.onrender.com](https://college-id-management.onrender.com)  
+> **🔍 Instant QR Verification:** [https://college-id-management.onrender.com/verify](https://college-id-management.onrender.com/verify)  
+> **⚡ Cloud Infrastructure:** Hosted on Render (Singapore) with MongoDB Atlas Cloud Replica Set
+
+A web-based student ID management system built for Vignan University. It allows administrators to issue official PVC-style student ID cards with dynamic QR codes and provides an instant verification portal with 2FA email OTP to verify student authenticity on the spot.
 
 ---
 

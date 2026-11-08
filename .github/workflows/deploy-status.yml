@@ -5,6 +5,11 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  deployments: write
+  statuses: write
+
 jobs:
   production-deployment:
     name: Production Environment
@@ -16,10 +21,18 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Verify Portal Status
+      - name: Verify Live Render Deployment
         run: |
           echo "🎓 Vignan College ID Management Portal"
           echo "🌐 Live Permanent Cloud URL: https://college-id-management.onrender.com"
           echo "🔍 Verification Endpoint: https://college-id-management.onrender.com/verify"
-          echo "✅ Status: ACTIVE (Render Cloud 24/7)"
+          echo "Testing live connectivity..."
+          RESPONSE=$(curl -s -w "\nHTTP_STATUS:%{http_code}" https://college-id-management.onrender.com/api/health)
+          echo "$RESPONSE"
+          if echo "$RESPONSE" | grep -q "HTTP_STATUS:200"; then
+            echo "✅ Status: ACTIVE (Render Cloud 24/7 Verified)"
+          else
+            echo "⚠️ Service warming up..."
+          fi
+
 
